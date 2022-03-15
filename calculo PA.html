@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule a PA</title>
+</head>
+<body>
+    <button onclick="calcAn()">calcule o An</button><br>
+    <button onclick="calcA1()">calcule o A1</button><br>
+    <button onclick="calcR()">calcule o R</button><br>
+    <button onclick="calcN()">calcule o N</button><br><br>
+    <input type="date"><br><br>
+    <input type="mail" placeholder="c é bem gay né?"> <br><br>
+    <input type="password" placeholder="vc só pode digitar bolinhas">
+</body>
+</html>
+<script>
+    function calcAn(){
+        var a1 = Number(prompt("Digite o valor de a1"));
+        var n = Number(prompt("Digite o valor de n"));
+        var r = Number(prompt("Digite o valor de r"));
+        var an = a1 + (n-1) * r;
+        alert(an);
+    }
+    function calcA1(){
+    var a1 = Number(prompt("Digite o valor de a1"));
+        var n = Number(prompt("Digite o valor de n"));
+        var r = Number(prompt("Digite o valor de r"));
+        var an = a1 - (n-1) * r;
+        alert(a1);
+    }
+    function calcN(){
+        var a1 = Number(prompt("Digite o valor de a1"));
+        var n = Number(prompt("Digite o valor de n"));
+        var r = Number(prompt("Digite o valor de r"));
+        var an = a1 - (n-1) * r;
+        alert(n);
+    }
+    
+</script>
