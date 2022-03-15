@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algo a dizer</title>
+</head>
+<body>
+    <button onclick="button()">Você é bem...</button>
+    <br><br>
+    <button onclick="cualculaidade()">Quantos anos eu terei no final de 2022?</button>
+
+</body>
+</html>
+<script>
+    function button(){
+        alert("LINDO!:)")
+        var num1 = Number (prompt("Digite o primeiro número!"));
+        var num2 = Number (prompt("Digite o segundo número!"));
+        var num3 = Number (prompt("Dgite o terceiro número!"));
+        var delta = num2*num2 - 4*num1*num3;
+        var x1 = (-num2 + Math.sqrt(delta))/2*num1
+        var x2 = (-num2 - Math.sqrt(delta))/2*num1
+        var mensagem = "o resultado do x1 é: "+x1+" , o resultado de x2 é: "+x2;
+        alert(mensagem)
+    }
+        function cualculaidade(){
+            var anoNasc = Number (prompt("Digite o ano que você nasceu!"));
+            var idade = 2022 - anoNasc;
+            var msg = "No final de 2022 você terá"+idade+" anos.\n";
+            if(idade < 18){
+                msg +="Portanto, é menor de idade!\n";
+            }
+            else{
+                msg +="Portanto, é maior de idade!\n";
+            }
+            if(idade % 2 == 0){
+                msg +="Portanto sua idade é um número par";
+            }
+            else{
+                msg +="Portanto sua idade é um número ímpar";
+            }
+            alert(msg);
+        }
+        
+</script>
